@@ -4,11 +4,11 @@ clear all; clc;
 num_user = 10;
 run_time = 1000;
 
-fix_data_rate = [5;5;5;5;10;10;10;10;20;50];
+%fix_data_rate = [5;5;5;5;10;10;10;10;20;50];
 %d = 0.01*rand(num_user, 1);
 d = 0.001*ones(num_user,1);
-%data_rate = randi([5 20], num_user, run_time);
-data_rate = repmat(fix_data_rate,1,run_time);
+data_rate = randi([5 50], num_user, run_time);
+%data_rate = repmat(fix_data_rate,1,run_time);
 assignments = zeros(num_user, run_time);
 %possible_assignments = eye(num_uer);
 
